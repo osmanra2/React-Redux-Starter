@@ -2,6 +2,17 @@
   "name": "react-template",
   "version": "1.0.0",
   "main": "index.js",
+  "babel":{
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "env": {
+      "development": {
+        "presets": []
+      }
+    }
+  },
   "scripts": {
     "dev": "webpack",
     "start": "webpack-dev-server"
@@ -15,6 +26,7 @@
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
     "babel-register": "^6.9.0",
+    "bulma": "^0.4.3",
     "cross-env": "^1.0.8",
     "css-loader": "^0.23.1",
     "expect": "^1.20.1",
@@ -30,7 +42,7 @@
     "redux-thunk": "^2.1.0",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.1",
+    "webpack": "^1.15.0",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-dev-server": "^1.14.1",
     "webpack-hot-middleware": "^2.11.0"
